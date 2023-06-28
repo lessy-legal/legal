@@ -3,7 +3,7 @@ plugins:
 relative_links:
   enabled: true
   collections: true
-title: 'Lessy.app legal documents'
+title: 'Lessy.app'
 include:
   - index.md
   - en/user_agreement.md
