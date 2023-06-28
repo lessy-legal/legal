@@ -9,3 +9,4 @@ include:
   - en/user_agreement.md
   - en/license_agreement.md
   - en/privacy_policy.md
+  - _redirects
