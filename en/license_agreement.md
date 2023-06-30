@@ -11,7 +11,7 @@
 
 ## 1. General Provisions
 
-1.1. This License Agreement (the License) establishes the terms of use of the Lessy program for mobile devices (the Program) and is executed between any person using the Program (the User) and Catalog Service LLC (hereinafter referred to as Catalog).
+1.1. This License Agreement (the License) establishes the terms of use of the Lessy program for mobile devices (the Program) and is executed between any person using the Program (the User) and Catalog Service LLC (Registration number 217899-3301-ООО) (hereinafter referred to as Catalog).
 
 1.2. By copying and installing the Program on their mobile device or using the Program any way, the User expresses their full and unconditional consent to all the terms and conditions of the License.
 
