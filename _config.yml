@@ -4,8 +4,4 @@ relative_links:
   enabled: true
   collections: true
 title: 'Lessy.app'
-include:
-  - index.md
-  - en/user_agreement.md
-  - en/license_agreement.md
-  - en/privacy_policy.md
+repository: legal/lessy-legal.github.io
