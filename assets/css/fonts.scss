@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Yango Headline";
+  font-display: swap;
+  src: url("../fonts/yango-headline.woff") format("woff")
+}
+
+@font-face {
+  font-family: "Yango Text";
+  font-display: swap;
+  src: url("../fonts/YangoText_W_Rg.woff2") format("woff2"),
+    url("../fonts/YangoText_W_Rg.woff") format("woff")
+}
+
+@font-face {
+  font-family: "Yango Text";
+  font-display: swap;
+  font-weight: 500;
+  src: url("../fonts/YangoText_W_Md.woff2") format("woff2"),
+    url("../fonts/YangoText_W_Md.woff") format("woff")
+}
+
+@font-face {
+  font-family: "Yango Text";
+  font-display: swap;
+  font-weight: 900;
+  src: url("../fonts/YangoText_W_Bd.woff2") format("woff2"),
+    url("../fonts/YangoText_W_Bd.woff") format("woff")
+}

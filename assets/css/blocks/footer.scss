@@ -1,0 +1,22 @@
+.footer {
+  text-align: center;
+  height: 160px;
+  background: url('../images/footer_left.svg') left top no-repeat,
+    url('../images/footer_right.svg') right top no-repeat,
+    url('../images/footer_center.svg') left top repeat-x;
+  background-color: $color-brand-primary;
+}
+
+.footer__copyright {
+  margin: 110px 0 0;
+  color: white;
+  font-size: $font-size-s;
+  line-height: $font-size-s;
+  font-weight: 500;
+}
+
+@media screen and (max-width: $media-query-mobile-max-width) {
+  .footer__copyright {
+    font-size: $font-size-mobile-s;
+  }
+}

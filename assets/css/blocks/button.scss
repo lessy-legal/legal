@@ -1,0 +1,25 @@
+.button {
+  border: 1px solid $color-text-primary;
+  border-radius: $border-radius-m;
+  text-decoration: none;
+  color: $color-text-primary;
+  margin: 0;
+  padding: 9px 16px;
+  font-size: $font-size-xs;
+  line-height: 22px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: color $transition-duration, border-color $transition-duration;
+}
+
+.button:hover {
+  color: $color-brand-primary;
+  border-color: $color-brand-primary;
+}
+
+@media screen and (max-width: $media-query-mobile-max-width) {
+  .button {
+    padding-block: 5px;
+    font-size: $font-size-mobile-s;
+  }
+}

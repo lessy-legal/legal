@@ -1,0 +1,5 @@
+{% if page.language == 'pt' %}
+  Exibir histórico de revisões
+{% else %}
+  View revision history
+{% endif %}

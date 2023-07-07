@@ -1,0 +1,5 @@
+{% if page.language == 'pt' %}
+  Documentos legais
+{% else %}
+  Legal documents
+{% endif %}

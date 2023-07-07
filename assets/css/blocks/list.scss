@@ -1,0 +1,8 @@
+.list li a {
+  color: $color-text-primary;
+  transition: color $transition-duration;
+}
+
+.list li a:hover {
+  color: $color-brand-primary;
+}

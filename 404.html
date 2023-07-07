@@ -1,11 +1,18 @@
-<html>
-    <head>
-        <title>404 Page not found</title>
-    </head>
-    <body>
-        <h1>404 Page not found</h1>
-        <script>
-            window.location.replace("https://legal.lessy.tech");
-        </script>
-    </body>
+---
+---
+
+<!DOCTYPE html>
+<html class="page">
+  <head>
+    <script>
+      window.location.replace("{{ site.url }}");
+    </script>
+    {% include head.html %}
+    <title>404 Page not found</title>
+  </head>
+  <body class="page__wrapper">
+    {% include header.html %}
+    <h1>404 Page not found</h1>
+    {% include footer.html %}
+  </body>
 </html>

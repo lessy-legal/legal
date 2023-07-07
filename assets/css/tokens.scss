@@ -1,0 +1,40 @@
+$media-query-mobile-max-width: 767px;
+$media-query-desktop-min-width: 768px;
+
+$max-width: 1200px;
+$max-width-text: 1000px + 18px*2;
+$side-margin-l: 60px;
+$side-margin-s: 20px;
+$full-width-minus-side-margin-l: calc(100% - 60px * 2);
+$full-width-minus-side-margin-s: calc(100% - 20px * 2);
+
+$transition-duration: .2s;
+
+$border-radius-xl: 40px;
+$border-radius-m: 16px;
+$border-radius-s: 12px;
+
+$font-size-xs: 14px;
+$font-size-s: 16px;
+$font-size-m: 18px;
+$font-size-l: 32px;
+$font-size-xl: 56px;
+
+$font-size-mobile-xs: 12px;
+$font-size-mobile-s: 14px;
+$font-size-mobile-m: 14px;
+$font-size-mobile-l: 22px;
+$font-size-mobile-xl: 32px;
+
+$font-stack: 'Yango Text', Arial, Helvetica, sans-serif;
+$font-stack-title: 'Yango Headline', Arial, Helvetica, sans-serif;
+
+$color-background-page: black;
+$color-background-primary: white;
+$color-background-secondary: #F7F8F9;
+$color-brand-primary: #26A65D;
+$color-brand-secondary: #7ECFA1;
+$color-brand-tertiary: #DEFFEC;
+$color-text-primary: black;
+$color-text-secondary: #8C9FAD;
+$color-text-inverted-primary: white;

@@ -1,0 +1,11 @@
+@media screen and (min-width: $media-query-desktop-min-width) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $media-query-mobile-max-width) {
+  .desktop-only {
+    display: none;
+  }
+}

@@ -1,0 +1,21 @@
+.main {
+  background-color: $color-background-primary;
+  flex-grow: 100;
+  border-radius: $border-radius-xl $border-radius-xl 0 0;
+  padding: 64px 42px;
+}
+
+@media screen and (max-width: $media-query-mobile-max-width) {
+  .main {
+    padding: 48px 0px;
+  }
+}
+
+.main__wrapper {
+  margin: 0 auto;
+  max-width: $max-width-text;
+}
+
+.main__wrapper_grid {
+  max-width: $max-width;
+}

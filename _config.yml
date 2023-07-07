@@ -1,7 +1,12 @@
+title: 'Lessy.app'
+author: 'Lessy'
+repository: 'lessy-legal/legal'
+url: 'https://legal.lessy.tech'
+sass:
+  sass_dir: assets/css/
+  style: compressed
 plugins:
   - jekyll-relative-links
 relative_links:
   enabled: true
   collections: true
-title: 'Lessy.app'
-repository: legal/lessy-legal.github.io
