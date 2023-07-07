@@ -1,7 +1,7 @@
-# Lessy Service User Agreement
-
-* [Back to index](../)
-* [Revision history](https://github.com/lessy-legal/legal/commits/main/en/user_agreement.md)
+---
+title: Lessy Service User Agreement
+language: en
+---
 
 ## 1. General Provisions
 1.1. Catalog Service LLC, (hereinafter referred to as Catalog) offers the Internet user (hereinafter referred to as the User) to use its Lessy service (hereinafter referred to as the Service) on the terms and conditions set forth in this user agreement (hereinafter referred to as the Agreement, UA). The Agreement shall come into force from the moment the User agrees with its terms and conditions in the manner provided for in Clause 1.6 hereof.

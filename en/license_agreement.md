@@ -1,13 +1,13 @@
-# License Agreement for Use of Lessy Program for Mobile Devices
+---
+title: License Agreement for Use of Lessy Program for Mobile Devices
+language: en
+---
 
-* [Back to index](../)
-* [Revision history](https://github.com/lessy-legal/legal/commits/main/en/license_agreement.md)
+**Before using the program, please, read the terms and conditions of the following license agreement.**
 
-*Before using the program, please, read the terms and conditions of the following license agreement.*
+**Any use of the program shall mean your full and unconditional acceptance of the terms and conditions of this license agreement.**
 
-*Any use of the program shall mean your full and unconditional acceptance of the terms and conditions of this license agreement.*
-
-*If you do not accept the license agreement in full, you may not use the program for any purpose.*
+**If you do not accept the license agreement in full, you may not use the program for any purpose.**
 
 ## 1. General Provisions
 
