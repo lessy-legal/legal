@@ -9,7 +9,7 @@
 
 .footer__copyright {
   margin: 110px 0 0;
-  color: white;
+  color: $color-text-inverted-primary;
   font-size: $font-size-s;
   line-height: $font-size-s;
   font-weight: 500;
@@ -18,5 +18,19 @@
 @media screen and (max-width: $media-query-mobile-max-width) {
   .footer__copyright {
     font-size: $font-size-mobile-s;
+  }
+}
+
+@media print {
+  .footer {
+    height: fit-content;
+    background: white;
+  }
+
+  .footer__copyright {
+    text-align: left;
+    color: $color-text-primary;
+    margin: 20px 0 0 20px;
+    font-size: $font-size-xs;
   }
 }

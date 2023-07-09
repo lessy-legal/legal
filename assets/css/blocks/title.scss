@@ -72,3 +72,15 @@
     font-size: $font-size-mobile-xl;
   }
 }
+
+@media print {
+  .title__breadcrumb {
+    display: none;
+  }
+
+  .title__text {
+    color: $color-text-primary;
+    margin-right: 0;
+    font-size: $font-size-l;
+  }
+}

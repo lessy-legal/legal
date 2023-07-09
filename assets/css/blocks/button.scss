@@ -23,3 +23,9 @@
     font-size: $font-size-mobile-s;
   }
 }
+
+@media print {
+  .button {
+    display: none;
+  }
+}

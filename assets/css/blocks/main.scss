@@ -11,6 +11,13 @@
   }
 }
 
+@media print {
+  .main {
+    flex-grow: 0;
+    padding: 0;
+  }
+}
+
 .main__wrapper {
   margin: 0 auto;
   max-width: $max-width-text;

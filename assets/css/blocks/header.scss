@@ -15,6 +15,12 @@
   }
 }
 
+@media print {
+  .header {
+    display: none;
+  }
+}
+
 .header__logo-link {
   line-height: 0;
 }
