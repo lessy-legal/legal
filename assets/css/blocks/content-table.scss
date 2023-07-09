@@ -17,6 +17,13 @@
     background-color: $color-background-secondary;
   }
 
+  @media screen and (prefers-color-scheme: dark) {
+    thead th,
+    tr:nth-child(even) td {
+      background-color: $color-darkmode-background-secondary;
+    }
+  }
+
   th, td {
     vertical-align: top;
     padding: 14px $side-margin-s;

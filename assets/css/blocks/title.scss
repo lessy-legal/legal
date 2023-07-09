@@ -73,6 +73,20 @@
   }
 }
 
+@media screen and (prefers-color-scheme: dark) {
+  .title__breadcrumb {
+    color: $color-darkmode-text-secondary;
+  }
+
+  .title__breadcrumb:hover {
+    color: $color-darkmode-brand-secondary;
+  }
+
+  .title__text {
+    color: $color-darkmode-brand-primary;
+  }
+}
+
 @media print {
   .title__breadcrumb {
     display: none;

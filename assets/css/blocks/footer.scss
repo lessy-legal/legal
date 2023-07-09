@@ -15,6 +15,20 @@
   font-weight: 500;
 }
 
+@media screen and (prefers-color-scheme: dark) {
+  .footer {
+    background-color: $color-darkmode-background-primary;
+    background: url('../images/footer_left_darkmode.svg') left top no-repeat,
+    url('../images/footer_right_darkmode.svg') right top no-repeat,
+    url('../images/footer_center_darkmode.svg') left top repeat-x;
+    background-color: $color-darkmode-brand-background;
+  }
+
+  .footer__copyright {
+    color: $color-darkmode-text-primary;
+  }
+}
+
 @media screen and (max-width: $media-query-mobile-max-width) {
   .footer__copyright {
     font-size: $font-size-mobile-s;

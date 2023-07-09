@@ -6,3 +6,13 @@
 .list li a:hover {
   color: $color-brand-primary;
 }
+
+@media screen and (prefers-color-scheme: dark) {
+  .list li a {
+    color: $color-darkmode-text-primary;
+  }
+
+  .list li a:hover {
+    color: $color-darkmode-brand-primary;
+  }
+}

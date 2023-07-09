@@ -29,3 +29,15 @@
     display: none;
   }
 }
+
+@media screen and (prefers-color-scheme: dark) {
+  .button {
+    border-color: $color-darkmode-text-primary;
+    color: $color-darkmode-text-primary;
+  }
+
+  .button:hover {
+    color: $color-darkmode-brand-secondary;
+    border-color: $color-darkmode-brand-secondary;
+  }
+}

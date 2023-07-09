@@ -40,6 +40,16 @@
 
 }
 
+@media screen and (prefers-color-scheme: dark) {
+  .content {
+    color: $color-darkmode-text-primary;
+
+    a {
+      color: $color-darkmode-brand-secondary;
+    }
+  }
+}
+
 @media screen and (max-width: $media-query-mobile-max-width) {
   .content {
     p, li, th, td {

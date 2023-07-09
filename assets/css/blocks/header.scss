@@ -34,6 +34,7 @@
   display: flex;
   gap: 30px;
   margin: 0;
+  list-style: none;
 }
 
 .header__link {
@@ -47,6 +48,16 @@
 
 .header__link:hover {
   color: $color-brand-secondary;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  .header__link {
+    color: $color-darkmode-text-primary;
+  }
+
+  .header__link:hover {
+    color: $color-darkmode-brand-secondary;
+  }
 }
 
 @media screen and (max-width: $media-query-mobile-max-width) {

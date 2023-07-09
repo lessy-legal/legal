@@ -16,6 +16,12 @@
   min-height: 100svh;
 }
 
+@media screen and (prefers-color-scheme: dark) {
+  .page {
+    background-color: $color-darkmode-background-page;
+  }
+}
+
 @media print {
   .page {
     background-color: white;

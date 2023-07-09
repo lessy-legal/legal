@@ -5,6 +5,12 @@
   padding: 64px 42px;
 }
 
+@media screen and (prefers-color-scheme: dark) {
+  .main {
+    background-color: $color-darkmode-background-primary;
+  }
+}
+
 @media screen and (max-width: $media-query-mobile-max-width) {
   .main {
     padding: 48px 0px;
