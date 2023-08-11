@@ -15,7 +15,7 @@
         {% endunless %}
       </div>
     </div>
-    <div class="content">
+    <div class="content{% if page.grid %} list-grid{% endif %}">
       {{content}}
     </div>
   </div>
