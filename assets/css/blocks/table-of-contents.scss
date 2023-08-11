@@ -1,0 +1,23 @@
+.table-of-contents {
+  a {
+    color: $color-text-primary;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $color-brand-primary;
+    text-decoration: underline;
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  .table-of-contents {
+    a {
+      color: $color-darkmode-text-primary;
+    }
+
+    a:hover {
+      color: $color-darkmode-brand-primary;
+    }
+  }
+}

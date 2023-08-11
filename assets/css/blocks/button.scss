@@ -17,6 +17,11 @@
   border-color: $color-brand-primary;
 }
 
+.button_top-margin {
+  display: inline-block;
+  margin-top: 12px;
+}
+
 @media screen and (max-width: $media-query-mobile-max-width) {
   .button {
     padding-block: 5px;
