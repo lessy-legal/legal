@@ -1,4 +1,4 @@
-{% if page.language == 'pt' %}
+{% if page.language == 'pt-BR' %}
   Documentos legais
 {% else %}
   Legal documents

@@ -1,4 +1,4 @@
-{% if page.language == 'pt' %}
+{% if page.language == 'pt-BR' %}
   Exibir histórico de revisões
 {% else %}
   View revision history
