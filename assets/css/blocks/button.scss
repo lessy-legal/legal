@@ -1,4 +1,5 @@
 .button {
+  display: inline-block;
   border: 1px solid $color-text-primary;
   border-radius: $border-radius-m;
   text-decoration: none;
@@ -18,7 +19,6 @@
 }
 
 .button_top-margin {
-  display: inline-block;
   margin-top: 12px;
 }
 
