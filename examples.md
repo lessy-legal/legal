@@ -79,3 +79,31 @@ This tag removes green color from all the links inside so that the TOC does not 
 * [More chapter](chapter-b.html)
 * [Yet another chapter](yachapter.html)
 </div>
+
+## Code snippets
+
+### Inline code
+Wrap inlide code snippets in ticks: `becomeHappy(now)`.
+
+### Block code
+{% highlight json %}
+{
+  "conditions": "A promoção é válida nas lojas da rede comercial, desde que o produto esteja disponível na loja. Quantidade limitada",
+  "date_end": "2020-06-12",
+  "date_start": "2020-06-05",
+  "id": "1234",
+  "image": "https://retailer1234.com/catalogs/1234.jpg",
+  "is_main": true,
+  "offers": [
+    "11111",
+    "22222",
+    "33333"
+  ],
+  "target_regions": [
+    "Brasil, São Paulo",
+    "Brasil, São Paulo Butantã"
+  ]
+}
+{% endhighlight %}
+
+[List of languages](https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers) supported by syntax highlighter.
