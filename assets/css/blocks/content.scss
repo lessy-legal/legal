@@ -1,3 +1,5 @@
+// This stylesheet is in dire need of refactoring.
+
 .content {
   color: $color-text-primary;
 
@@ -62,7 +64,7 @@
     background: url('../images/arrow_desktop_green.svg') no-repeat left 11px;
   }
 
-  p.note, p.alert, figure.highlight {
+  p.note, p.alert, div.note, div.alert, figure.highlight {
     background-color: $color-background-secondary;
     border-radius: $border-radius-s;
     padding: 14px $side-margin-s - 1;
@@ -73,13 +75,20 @@
     overflow: auto;
   }
 
-  p.note {
+  p.note, div.note {
     border: solid $color-brand-primary 1px;
   }
 
-  p.alert {
-    color: $color-text-alert;
+  p.alert, div.alert {
     border: solid $color-text-alert 1px;
+  }
+
+  .alert strong {
+    color: $color-text-alert;
+  }
+
+  div.alert > p, div.note > p {
+    margin: 0;
   }
 
   img {
@@ -96,7 +105,7 @@
       color: $color-darkmode-brand-secondary;
     }
 
-    p.note, p.alert, code:not(pre > code), figure.highlight {
+    p.note, p.alert, div.note, div.alert, code:not(pre > code), figure.highlight {
       background-color: $color-darkmode-background-secondary;
     }
 
@@ -104,8 +113,11 @@
       border-color: $color-darkmode-brand-primary;
     }
 
-    p.alert {
+    .alert strong {
       color: $color-darkmode-text-alert;
+    }
+
+    p.alert, div.alert {
       border-color: $color-darkmode-text-alert;
     }
 

@@ -18,8 +18,17 @@ Normal text
 **Note.** This is an important note
 {: .note}
 
-**Warning.** This is a warning
+**Warning.** This is a alert
 {: .alert}
+
+Here is a multiline alert
+<div class="alert" markdown="1">
+**Warning**
+
+Lorem ipsum dolor set amet.
+
+Take care of yourself!
+</div>
 
 ## Lists
 ### Unordered list
