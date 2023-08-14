@@ -82,6 +82,10 @@
     border: solid $color-text-alert 1px;
   }
 
+  img {
+    max-width: 100%;
+  }
+
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -104,6 +108,15 @@
       color: $color-darkmode-text-alert;
       border-color: $color-darkmode-text-alert;
     }
+
+    img {
+      opacity: 80%;
+    }
+
+    img:hover {
+      opacity: 100%;
+    }
+
   }
 }
 
