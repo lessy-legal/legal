@@ -1,7 +1,7 @@
 ---
 title: Connecting a retail chain
 language: en
-order_num: 100
+order_num: 200
 ---
 
 {% include table_of_contents.liquid %}
