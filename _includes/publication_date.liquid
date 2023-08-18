@@ -1,0 +1,21 @@
+{% include utils/history_files.liquid %}
+{% if page.name == "index.md" and page.path != "index.md" and history_files.size > 0 %}
+  {% assign is_index_for_document_with_history = true %}
+{% endif %}
+
+{% if is_index_for_document_with_history %}
+  {% assign source_file = history_files | last %}
+  {% assign source_filename = source_file.name %}
+{% else %}
+  {% assign source_filename = page.name %}
+{% endif %}
+{% assign date_parts = source_filename | split: "." | pop %}
+{% assign date = date_parts | reverse | join: "." %}
+
+{% if is_index_for_document_with_history or page.type == "document_version" %}
+  <p>
+    <em>
+      {% include i18n/published_on.liquid %} {{ date }}
+    </em>
+  </p>
+{% endif %}

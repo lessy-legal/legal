@@ -1,20 +1,23 @@
 <header class="header">
   <a href="{{ '/' | relative_url }}" class="header__logo-link">
-    <img class="header__logo" src="{{ '/assets/images/logo.svg' | relative_url }}" alt="Lessy logotype">
+    <img
+      class="header__logo"
+      src="{{ '/assets/images/logo.svg' | relative_url }}"
+      alt="Lessy logotype">
   </a>
   <nav>
     <ul class="header__menu">
       <li class="desktop-only">
-        {% include i18n/about.html %}
+        {% include i18n/about.liquid %}
       </li>
       <li class="desktop-only">
-        {% include i18n/for_retailers.html %}
+        {% include i18n/for_retailers.liquid %}
       </li>
       <li class="desktop-only">
-        {% include i18n/contacts.html %}
+        {% include i18n/contacts.liquid %}
       </li>
       <li class="mobile-only">
-        {% include i18n/visit_main_website.html %}
+        {% include i18n/visit_main_website.liquid %}
       </li>
     </ul>
   </nav>

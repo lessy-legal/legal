@@ -1,0 +1,18 @@
+{% assign crumbs = page.url | remove: '/index.html' | split: '/' %}
+{% assign skip_path_levels = 2 %}
+
+{% unless page.url == '/' %}
+  <a class="title__breadcrumb" href="{{ '/' | relative_url }}">
+    {% include i18n/legal_documents.liquid %}
+  </a>
+  {% for crumb in crumbs offset: skip_path_levels %}
+    {% if forloop.last == false %}
+      {% assign path_depth = forloop.index | plus: skip_path_levels %}
+      {% assign path = crumbs | slice: 0, path_depth | join: "/" | append: '/' %}
+      {% assign linked_page = site.pages | where_exp: "page", "page.url == path" | first %}
+      <a class="title__breadcrumb" href="{{ path }}">
+        {{ linked_page.title }}
+      </a>
+    {% endif %}
+  {% endfor %}
+{% endunless %}

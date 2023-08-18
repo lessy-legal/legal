@@ -1,0 +1,6 @@
+{% include utils/history_files.liquid %}
+{% if page.name == "index.md" and page.path != "index.md" and history_files.size > 1 %}
+  <a class="button" href="./history.html">
+    {% include i18n/view_revision_history.liquid %}
+  </a>
+{% endif %}

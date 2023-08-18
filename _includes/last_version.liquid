@@ -1,0 +1,3 @@
+{% include utils/history_files.liquid %}
+{% assign current_version = history_files | last %}
+{{ current_version.content }}

@@ -1,0 +1,3 @@
+{% assign dir_no_leading_slash = page.dir | remove_first: '/' %}
+{% assign dir_files = site.pages | where_exp: "file", "file.path contains dir_no_leading_slash" %}
+{% assign history_files = dir_files | where: "type", "document_version" %}
