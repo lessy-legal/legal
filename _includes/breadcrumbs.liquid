@@ -3,7 +3,7 @@
 
 {% unless page.url == '/' %}
   <a class="title__breadcrumb" href="{{ '/' | relative_url }}">
-    {% include i18n/legal_documents %}
+    {% include i18n/legal_documents.liquid %}
   </a>
   {% for crumb in crumbs offset: skip_path_levels %}
     {% if forloop.last == false %}

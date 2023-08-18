@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html class="page" {%if page.language %}lang="{{page.language}}"{% endif %}>
+<html class="page" {% if page.language %}lang="{{page.language}}"{% endif %}>
   <head>
     <title>{{ page.title | escape }} - {{ site.title | escape }}</title>
-    {% include head.html %}
+    {% include head.liquid %}
   </head>
   <body class="page__wrapper">
-    {% include header.html %}
+    {% include header.liquid %}
     {% include main.liquid %}
-    {% include footer.html %}
+    {% include footer.liquid %}
   </body>
 </html>
