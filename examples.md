@@ -76,19 +76,6 @@ Alt text is shown when the image hasn't loaded.
 | Table cell 1 | Table cell 2 | Table cell 3 | Table cell 4 |  Table cell 5 |
 
 
-## Table of contents
-
-This tag removes green color from all the links inside so that the TOC does not look too colorful.
-
-<div class="table-of-contents" markdown="1">
-* [A chapter](chapter.html)
-  * [Subchapter A](subchapter-a.html)
-  * [Subchapter B](subchapter-b.html)
-    * [Sub-subchapter](subsubchapter.html)
-* [More chapter](chapter-b.html)
-* [Yet another chapter](yachapter.html)
-</div>
-
 ## Code snippets
 
 ### Inline code
