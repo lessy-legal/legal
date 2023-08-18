@@ -1,0 +1,14 @@
+{% include utils/history_files.liquid %}
+<div class="table-of-contents" markdown="1">
+  <ul>
+    {% assign history_files = history_files | reverse %}
+    {% for file in history_files %}
+      <li>
+        <a href="{{ file.url | relative_url }}">
+          {% assign date_parts = file.name | split: "." | pop %}
+          {{ date_parts | reverse | join: "." }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

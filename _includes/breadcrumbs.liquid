@@ -1,0 +1,5 @@
+{% unless page.url == '/' %}
+  <a class="title__breadcrumb" href="{{ '/' | relative_url }}">
+    {% include i18n/legal_documents %}
+  </a>
+{% endunless %}

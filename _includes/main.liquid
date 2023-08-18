@@ -1,0 +1,14 @@
+<main class="main">
+  <div class="main__wrapper{% if page.grid %} main__wrapper_grid{% endif %}">
+    <div class="title">
+      {% include breadcrumbs.liquid %}
+      <div class="title__text-with-button">
+        <h1 class="title__text">{{ page.title }}</h1>
+        {% include see_history_button.liquid %}
+      </div>
+    </div>
+    <div class="content{% if page.grid %} list-grid{% endif %}">
+      {{ content }}
+    </div>
+  </div>
+</main>
