@@ -1,0 +1,27 @@
+{% assign current_url = page.path | remove: 'index.md' %}
+{% assign dir_pages = site.pages | where_exp: "file", "file.path contains current_url" | sort: "order_num" %}
+{% assign dir_pages_without_current = dir_pages | where_exp: "file", "file.path != page.path" %}
+
+{% assign current_depth = page.path | split: "/" | size | plus: 1 %}
+{% assign initial_depth = current_depth %}
+
+<ul class="table-of-contents">
+  {% for page in dir_pages_without_current %}
+    {% assign new_depth = page.url | split: "/" | size %}
+    {% if new_depth > current_depth %}
+      <ul>
+    {% elsif new_depth < current_depth %}
+      </ul>
+    {% endif %}
+    <li>
+      <a href="{{ page.url }}">
+        {{ page.title }}
+      </a>
+    </li>
+    {% assign current_depth = new_depth %}
+  {% endfor %}
+  {% assign levels_deep = current_depth | minus: initial_depth %}
+  {% for i in (1..levels_deep) %}
+    </ul>
+  {% endfor %}
+</ul>
