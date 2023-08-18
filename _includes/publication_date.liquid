@@ -13,5 +13,9 @@
 {% assign date = date_parts | reverse | join: "." %}
 
 {% if is_index_for_document_with_history or page.type == "document_version" %}
-  <p>{% include i18n/published_on.liquid %} {{ date }}</p>
+  <p>
+    <em>
+      {% include i18n/published_on.liquid %} {{ date }}
+    </em>
+  </p>
 {% endif %}
