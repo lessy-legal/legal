@@ -13,11 +13,6 @@ As informações sobre descontos e promoções em redes de varejo são fornecida
 
 ## Indiće
 
-<div class="table-of-contents" markdown="1">
-* [Conectar uma rede de varejo](conectar-uma-rede-de-varejo.html)
-  * [Requisitos para o logotipo da rede](requisitos-para-o-logotipo-da-rede.html)
-  * [Formatos de dados e arquivos de transmissão](formatos-de-dados-e-arquivos-de-transmissao.html)
-* [Criação de ofertas corretas](criacao-de-ofertas-corretas.html)
-</div>
+{% include table_of_contents.liquid %}
 
-[Contatar com o suporte](suporte.html){: .button .button_top-margin}
+[Contatar com o suporte](./feedback/){: .button .button_top-margin}

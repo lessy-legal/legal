@@ -11,8 +11,8 @@ Information cooperation is realized pursuant to the Offer terms and conditions. 
 
 Information about discounts and promotions in retail chains is provided in Lessy free of charge.
 
-## Indiće
+## Table of contents
 
 {% include table_of_contents.liquid %}
 
-[Contatar com o suporte](./feedback/){: .button .button_top-margin}
+[Contact support](./feedback/){: .button .button_top-margin}
