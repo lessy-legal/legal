@@ -1,5 +1,16 @@
+{% assign crumbs = page.url | remove: '/index.html' | split: '/' %}
+{% assign skip_path_levels = 2 %}
+
 {% unless page.url == '/' %}
   <a class="title__breadcrumb" href="{{ '/' | relative_url }}">
     {% include i18n/legal_documents %}
   </a>
+  {% for crumb in crumbs offset: skip_path_levels %}
+    {% if forloop.last == false %}
+      {% assign path_depth = forloop.index | plus: skip_path_levels %}
+      <a class="title__breadcrumb" href="{% for crumb in crumbs limit: path_depth %}{{ crumb | append: '/' }}{% endfor %}">
+        {{ crumb | replace: '_', ' ' | remove: '.html' | capitalize }}
+      </a>
+    {% endif %}
+  {% endfor %}
 {% endunless %}
