@@ -8,8 +8,10 @@
   {% for crumb in crumbs offset: skip_path_levels %}
     {% if forloop.last == false %}
       {% assign path_depth = forloop.index | plus: skip_path_levels %}
-      <a class="title__breadcrumb" href="{% for crumb in crumbs limit: path_depth %}{{ crumb | append: '/' }}{% endfor %}">
-        {{ crumb | replace: '_', ' ' | remove: '.html' | capitalize }}
+      {% assign path = crumbs | slice: 0, path_depth | join: "/" | append: '/' %}
+      {% assign linked_page = site.pages | where_exp: "page", "page.url == path" | first %}
+      <a class="title__breadcrumb" href="{{ path }}">
+        {{ linked_page.title }}
       </a>
     {% endif %}
   {% endfor %}
