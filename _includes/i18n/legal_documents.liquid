@@ -1,5 +1,8 @@
-{% if page.language == 'pt-BR' %}
+{% include utils/language.liquid %}
+{% if language == 'pt-BR' %}
   Documentos legais
+{% elsif language == 'ru' %}
+  Правовые документы
 {% else %}
   Legal documents
 {% endif %}

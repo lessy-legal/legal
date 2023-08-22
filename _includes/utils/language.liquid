@@ -1,0 +1,7 @@
+{% capture language %}
+  {% if page.language %}
+    {{ page.language }}
+  {% elsif site.language %}
+    {{ site.language }}{% endif %}
+{% endcapture %}
+{% assign language = language | strip %}

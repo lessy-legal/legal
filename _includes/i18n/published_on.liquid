@@ -1,5 +1,8 @@
-{% if page.language == 'pt-BR' %}
+{% include utils/language.liquid %}
+{% if language == 'pt-BR' %}
   Publicado em
+{% elsif language == 'ru' %}
+  Опубликовано
 {% else %}
   Published on
 {% endif %}

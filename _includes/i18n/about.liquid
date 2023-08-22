@@ -1,5 +1,6 @@
-<a class="header__link" href="https://lessy.app{% if page.language == 'pt-BR' %}/portugus{% endif %}">
-  {% if page.language == 'pt-BR' %}
+{% include utils/language.liquid %}
+<a class="header__link" href="https://lessy.app{% if language == 'pt-BR' %}/portugus{% endif %}">
+  {% if language == 'pt-BR' %}
     Sobre nós
   {% else %}
     About

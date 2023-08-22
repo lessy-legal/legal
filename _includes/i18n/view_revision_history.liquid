@@ -1,5 +1,8 @@
-{% if page.language == 'pt-BR' %}
+{% include utils/language.liquid %}
+{% if language == 'pt-BR' %}
   Exibir histórico de revisões
+{% elsif language == 'ru' %}
+  Смотреть историю изменений
 {% else %}
   View revision history
 {% endif %}
