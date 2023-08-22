@@ -2,6 +2,7 @@ title: 'Lessy.app'
 author: 'Lessy'
 repository: 'lessy-legal/legal'
 url: 'https://legal.lessy.tech'
+language: 'en'
 sass:
   sass_dir: assets/css/
   style: compressed

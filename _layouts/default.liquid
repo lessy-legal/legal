@@ -1,5 +1,12 @@
 <!DOCTYPE html>
-<html class="page" {% if page.language %}lang="{{page.language}}"{% endif %}>
+{% capture lang %}
+  {% if page.language %}
+    {{ page.language }}
+  {% elsif site.language %}
+    {{ site.language }}
+  {% endif %}
+{% endcapture %}
+<html class="page" {% if lang %}lang={{ lang }}{% endif %}>
   <head>
     <title>{{ page.title | escape }} - {{ site.title | escape }}</title>
     {% include head.liquid %}
